@@ -1,9 +1,5 @@
 # Readme
 
-Please follow the detailed instructions on how to run this React sample with ZITADEL [here](https://zitadel.com/docs/guides/start/quickstart). 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:

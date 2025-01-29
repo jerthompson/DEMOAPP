@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import authConfig from '../authConfig';
+import authConfig from '../js/authConfig';
+import Profile from './Profile';
 
 const Callback = ({ auth, setAuth, userManager, userInfo, setUserInfo, handleLogout }) => {
 
@@ -32,14 +33,13 @@ const Callback = ({ auth, setAuth, userManager, userInfo, setUserInfo, handleLog
   if (auth === true && userInfo) {
     return (
       <div>
+        {/* 
         <h1>Welcome, {userInfo.name}!</h1>
-        <h2>Your ZITADEL Profile Information</h2>
         <h3>Name:  {userInfo.name}</h3>
         <h3>Email: {userInfo.email}</h3>
-        <h3>Email Verified: {userInfo.email_verified? "Yes": "No"}</h3>
-        <h3>Locale: {userInfo.locale}</h3>
-
-        <button onClick={handleLogout}>Log out</button>
+        <button onClick={handleLogout}>Log Out</button>
+        */}
+      <Profile userInfo = {userInfo}/>
       </div>
     );
   }
